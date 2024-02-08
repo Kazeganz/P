@@ -1,0 +1,445 @@
+body,
+h1,
+h2,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.van-tabs__nav {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.van-tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wingo-bet {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wingo-bet-btn-item {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tri-purple {
+    background-color: #6f42c1;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wingo-bet-number {
+    margin-top: 10px;
+}
+
+.wingo-bet-bottom {
+    margin-top: 10px;
+}
+
+.show-more-btn {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* ... (CSS sebelumnya) */
+
+.van-icon {
+    /* Styling for your icon goes here */
+    font-family: "Your Icon Font", sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+
+/* Styling for the arrow-up icon in the show-more-btn */
+
+.van-icon-arrow-up {
+    font-family: "Van-Icon";
+    /* Gantilah "Van-Icon" dengan nama font ikon Van Anda */
+    content: '\e643';
+    /* Kode karakter untuk ikon panah atas di Van Icon */
+    font-size: 16px;
+    color: #007bff;
+    /* Warna panah atas */
+}
+
+
+/* Styling for the bet-more-btn */
+
+.bet-more-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wingo-bet-btn-item.small-red,
+.wingo-bet-btn-item.small-green,
+.wingo-bet-btn-item.big-red,
+.wingo-bet-btn-item.big-green {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Styling for the flex-content-center class */
+
+.flex-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styling for the show-more-btn */
+
+.show-more-btn i {
+    font-size: 16px;
+    color: #007bff;
+    /* Warna panah atas */
+}
+
+
+/* Styling for the tab navigation */
+
+
+/* ... (CSS sebelumnya) */
+
+
+/* Styling for the tab navigation */
+
+.van-tabs__nav {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.van-tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.van-tab--active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tab-name {
+    font-weight: bold;
+}
+
+.tab-time {
+    margin-top: 5px;
+}
+
+.van-count-down {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.van-tabs__line {
+    height: 2px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.wingo-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal */
+    padding: 10px;
+    /* Contoh padding untuk ruang tambahan di sekitar elemen */
+}
+
+.wingo-now__period {
+    /* Gaya untuk bagian "Periode" */
+    font-weight: bold;
+    /* Contoh gaya teks tebal */
+}
+
+.wingo-now__period-count-down {
+    /* Gaya untuk bagian "Hitung mundur" */
+}
+
+
+/* Gaya tambahan untuk van-count-down jika diperlukan */
+
+.van-count-down {
+    /* Contoh gaya untuk van-count-down */
+}
+
+.wingo-now__period-title {
+    font-weight: bold;
+}
+
+.wingo-now__period-value {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.wingo-now__period-count-down {
+    text-align: center;
+}
+
+.wingo-now__period-time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wingo-now__period-time-item {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.wingo-now__period-time-split {
+    margin: 0 2px;
+}
+
+nav {
+    margin-top: 90px;
+    /* Sesuaikan nilai margin-top sesuai kebutuhan Anda */
+}
+
+
+/* Add more styles as needed */
+
+.van-tabs__content {
+    /* Style for the van-tabs__content class */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.van-tab__pane {
+    /* Style for the van-tab__pane class */
+    margin-bottom: 10px;
+}
+
+.table-header {
+    /* Style for the table-header class */
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table-body {
+    /* Style for the table-body class */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    /* Optional: Tambahkan garis bawah jika diinginkan */
+}
+
+.cell-left {
+    flex-basis: 10%;
+}
+
+.van-col {
+    flex-basis: 30%;
+    /* Sesuaikan sesuai kebutuhan */
+}
+
+
+/* Tambahan gaya jika diperlukan */
+
+.van-row {
+    margin-bottom: 10px;
+}
+
+
+/* Gaya untuk container utama */
+
+.wingo-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Gaya untuk bagian periode */
+
+.wingo-now__period {
+    text-align: center;
+}
+
+.wingo-now__period-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wingo-now__period-value {
+    color: #555;
+}
+
+
+/* Gaya untuk hitung mundur */
+
+.wingo-now__period-count-down {
+    text-align: center;
+}
+
+.wingo-now__period-count-down .wingo-now__period-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wingo-now__period-time {
+    font-size: 24px;
+}
+
+
+/* Gaya untuk angka hitung mundur */
+
+.wingo-now__period-time-item {
+    display: inline-block;
+    width: 32px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 2px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.van-tabbar--fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    /* Memperbesar padding */
+}
+
+.van-tabbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+
+.van-tabbar-item.active {
+    color: #333;
+}
+
+.van-tabbar-item__icon {
+    margin-bottom: 8px;
+    /* Menyesuaikan margin ikon */
+    font-size: 20px;
+    /* Menyesuaikan ukuran ikon */
+}
+
+.van-tabbar-item__text {
+    font-size: 14px;
+    /* Menyesuaikan ukuran teks */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-close {
+    float: right;
+    cursor: pointer;
+}
+
+.popup-head {
+    text-align: center;
+}
+
+.popup-body {
+    padding: 20px 0;
+}
+
+.popup-confirm {
+    text-align: center;
+}
+
+.container {
+    /* Styles untuk container tombol-tombol */
+}

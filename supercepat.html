@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nama Game Anda - Game Online</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1>Saldo</h1>
+        <p>Point</p>
+    </header>
+
+    <div role="tablist" class="van-tabs__nav van-tabs__nav--line custom-tab-style-1">
+        <div role="tab" aria-selected="true" class="van-tab van-tab--active" onclick="goToDifferentPage('supercepat.html')">
+            <span class="van-tab__text van-tab__text--ellipsis" server="namaServer">
+                <div class="tab-name">Super Cepat</div>
+                <div class="tab-time">
+                </div>
+            </span>
+        </div>
+        <div role="tab" class="van-tab" onclick="goToDifferentPage('php/cepat.html')">
+            <span class="van-tab__text van-tab__text--ellipsis">
+                <div class="tab-name">Cepat</div>
+                <div class="tab-time">
+                </div>
+            </span>
+        </div>
+        <div role="tab" class="van-tab" onclick="goToDifferentPage('standar.html')">
+            <span class="van-tab__text van-tab__text--ellipsis">
+                <div class="tab-name">Standar</div>
+                <div class="tab-time">
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="wingo-now">
+        <div class="wingo-now__period" id="periodElement">
+            <span class="wingo-now__period-title">Periode:</span>
+            <span class="wingo-now__period-value" id="periodValue">1</span>
+        </div>
+
+        <div class="wingo-now__period-count-down">
+            <div class="wingo-now__period-title">Hitung mundur waktu detik</div>
+            <div class="wingo-now__period-time">
+                <div id="countdown" class="van-count-down">
+                    <span class="wingo-now__period-time-item" id="minutes">00</span>
+                    <span class="wingo-now__period-time-split">:</span>
+                    <span class="wingo-now__period-time-item" id="seconds">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <div class="wingo-bet">
+        <div class="flex-space-between wingo-bet-top">
+            <div class="wingo-bet-btn-item green" onclick="showBetOptions('Hijau')">Hijau</div>
+            <div class="wingo-bet-btn-item purple" onclick="showBetOptions('Ungu')">Ungu</div>
+            <div class="wingo-bet-btn-item red" onclick="showBetOptions('Merah')">Merah</div>
+        </div>
+        <div class="flex-space-between wingo-bet-number wingo-bet-small">
+            <div class="wingo-bet-btn-item red wingo-bet-item-0" onclick="showBetOptions('0')">
+                <div class="tri-purple">0</div>
+            </div>
+            <div class="wingo-bet-btn-item green wingo-bet-item-1" onclick="showBetOptions('1')">1</div>
+            <div class="wingo-bet-btn-item red wingo-bet-item-2" onclick="showBetOptions('2')">2</div>
+            <div class="wingo-bet-btn-item green wingo-bet-item-3" onclick="showBetOptions('3')">3</div>
+            <div class="wingo-bet-btn-item red wingo-bet-item-4" onclick="showBetOptions('4')">4</div>
+        </div>
+        <div class="flex-space-between wingo-bet-number wingo-bet-big">
+            <div class="wingo-bet-btn-item green wingo-bet-item-5" onclick="showBetOptions('5')">
+                <div class="tri-purple">5</div>
+            </div>
+            <div class="wingo-bet-btn-item red wingo-bet-item-6" onclick="showBetOptions('6')">6</div>
+            <div class="wingo-bet-btn-item green wingo-bet-item-7" onclick="showBetOptions('7')">7</div>
+            <div class="wingo-bet-btn-item red wingo-bet-item-8" onclick="showBetOptions('8')">8</div>
+            <div class="wingo-bet-btn-item green wingo-bet-item-9" onclick="showBetOptions('9')">9</div>
+        </div>
+        <div class="flex-space-between wingo-bet-bottom">
+            <div class="wingo-bet-btn-item small" onclick="showBetOptions('Kecil')">Kecil</div>
+            <div class="wingo-bet-btn-item big" onclick="showBetOptions('Besar')">Besar</div>
+        </div>
+        <div class="flex-space-between wingo-bet-bottom bet-more-btn">
+            <div class="wingo-bet-btn-item small-red" onclick="showBetOptions('K/M')">K/M</div>
+            <div class="wingo-bet-btn-item small-green" onclick="showBetOptions('K/H')">K/H</div>
+            <div class="wingo-bet-btn-item big-red" onclick="showBetOptions('B/M')">B/M</div>
+            <div class="wingo-bet-btn-item big-green" onclick="showBetOptions('B/H')">B/H</div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <div class="popup-head">
+                <h2>Head Popup</h2>
+            </div>
+            <div class="popup-body">
+                <p>Isi dari popup...</p>
+            </div>
+            <div class="popup-confirm">
+                <button onclick="confirmAction()">Konfirmasi</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Konten tombol-tombol yang akan menampilkan popup -->
+        <!-- Tambahkan atribut onclick untuk memanggil fungsi showPopup() -->
+    </div>
+
+    <script src="js/betoption.js"></script>
+
+    <div class="flex flex-content-center show-more-btn "><i class="van-icon van-icon-arrow-up "><!----></i></div>
+    <div class="wingo-bets wingo-list-wrap b-s-c ">
+        <div class="van-tabs van-tabs--line ">
+            <div class="van-tabs__wrap ">
+                <div role="tablist " class="van-tabs__nav van-tabs__nav--line custom-tab-style-2 ">
+                    <div role="tab " class="van-tab "><span class="van-tab__text van-tab__text--ellipsis ">Riwayat</span></div>
+                    <div role="tab " class="van-tab "><span class="van-tab__text van-tab__text--ellipsis ">Grafik tren</span></div>
+                    <div role="tab " class="van-tab "><span class="van-tab__text van-tab__text--ellipsis ">Riwayat saya</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="van-tabs__content ">
+            <div role="tabpanel " class="van-tab__pane ">
+                <div class="rounds-list ">
+                    <div class="rounds-table bg-i ">
+                        <div class="table-header ">
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">Periode</div>
+                                <div class="van-col van-col--7 ">Jumlah</div>
+                                <div class="van-col van-col--7 ">Hasil</div>
+                            </div>
+                        </div>
+                        <div class="table-body ">
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235078</div>
+                                <div class="van-col van-col--7 active-color-3 ">3</div>
+                                <div class="van-col van-col--7 ">
+
+                                    <!---->
+                                    <div class="split-line ">|</div>
+
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235077</div>
+                                <div class="van-col van-col--7 active-color-9 ">9</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-9 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-21 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235076</div>
+                                <div class="van-col van-col--7 active-color-2 ">2</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-2 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-20 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235075</div>
+                                <div class="van-col van-col--7 active-color-3 ">3</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-3 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-20 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235074</div>
+                                <div class="van-col van-col--7 active-color-8 ">8</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-8 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-21 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235073</div>
+                                <div class="van-col van-col--7 active-color-1 ">1</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-1 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-20 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235072</div>
+                                <div class="van-col van-col--7 active-color-3 ">3</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-3 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-20 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235071</div>
+                                <div class="van-col van-col--7 active-color-9 ">9</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-9 "></div>
+                                    <!---->
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-21 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235070</div>
+                                <div class="van-col van-col--7 active-color-5 ">5</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-5 "></div>
+                                    <div class="dot active-bg-color-12 "></div>
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-21 "></div>
+                                </div>
+                            </div>
+                            <div class="table-cell van-row ">
+                                <div class="cell-left van-col van-col--10 ">202401235069</div>
+                                <div class="van-col van-col--7 active-color-5 ">5</div>
+                                <div class="van-col van-col--7 ">
+                                    <div class="dot active-bg-color-5 "></div>
+                                    <div class="dot active-bg-color-12 "></div>
+                                    <div class="split-line ">|</div>
+                                    <div class="dot active-bg-color-21 "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more ">
+                            <div>Lebih</div><i class="van-icon van-icon-arrow-down "><!----></i></div>
+                    </div>
+                </div>
+                <div role="tabpanel " class="van-tab__pane " style="display: none; ">
+                    <!---->
+                </div>
+                <div role="tabpanel " class="van-tab__pane " style="display: none; ">
+                    <!---->
+                </div>
+            </div>
+
+            <div class="van-hairline--left-right van-tabbar van-tabbar--fixed " id="myTabbar ">
+                <div class="van-tabbar-item active " onclick="changeTab(0) ">
+                    <div class="van-tabbar-item__icon "><i class="van-icon van-icon-home-o "></i></div>
+                    <div class="van-tabbar-item__text ">Beranda</div>
+                </div>
+                <div class="van-tabbar-item " onclick="changeTab(1) ">
+                    <div class="van-tabbar-item__icon "><i class="van-icon van-icon-search "></i></div>
+                    <div class="van-tabbar-item__text ">Event</div>
+                </div>
+                <div class="van-tabbar-item " onclick="changeTab(2) ">
+                    <div class="van-tabbar-item__icon "><i class="van-icon van-icon-like-o "></i></div>
+                    <div class="van-tabbar-item__text ">Promosi</div>
+                </div>
+                <div class="van-tabbar-item " onclick="changeTab(3) ">
+                    <div class="van-tabbar-item__icon "><i class="van-icon van-icon-goods-o "></i></div>
+                    <div class="van-tabbar-item__text ">Game</div>
+                </div>
+                <div class="van-tabbar-item " onclick="changeTab(4) ">
+                    <div class="van-tabbar-item__icon "><i class="van-icon van-icon-setting-o "></i></div>
+                    <div class="van-tabbar-item__text ">akun</div>
+                </div>
+            </div>
+
+            <script src="js/script.js " defer></script>
+</body>
+
+</html>
+
+</html>
